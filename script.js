@@ -37,4 +37,4 @@ copyIcon.addEventListener('click',()=>{
 })
 
 // preventing other to write something in input box
-passwordBox.disabled = true;
+passwordBox.addEventListener('keydown',(e)=>e.preventDefault());
