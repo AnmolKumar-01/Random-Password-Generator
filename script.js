@@ -37,6 +37,4 @@ copyIcon.addEventListener('click',()=>{
 })
 
 // preventing other to write something in input box
-passwordBox.addEventListener('keydown',(e)=>e.preventDefault());
-// to prevent writing on input box ( in mobile view )
-passwordBox.setAttribute("onfocus", "this.blur();");
+passwordBox.disabled = true;
